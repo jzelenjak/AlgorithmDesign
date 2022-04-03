@@ -6,6 +6,17 @@ import java.util.List;
 import java.util.PriorityQueue;
 import java.util.Set;
 
+/**
+ * A maze is represented by a weighted directed graph G=(V,E), where V denotes the set containing n vertices and E the set containing m directed edges. Each vertex represents an intersection or end point in the maze and the edges represent paths between them. A directed edge is used for (downhill) tunnels and holes that you can jump into, but where it is impossible to get back. Because of this, it may become impossible to reach the exit.
+ *
+ * Some edges take longer than others, which is expressed in their weight.
+ *
+ * Additionally, the sheer number of options you can chose from in every vertex overwhelms you quite a bit, so every vertex takes 1 time step per outgoing edge (because you have to find out what is the correct one).
+ *
+ * Design and implement an algorithm that determines the path from s to t that takes the least amount of time ( which is the sum of lengths of all edges plus for all vertices (except t) the number of outgoing edges). Let the algorithm just print the total time of this path. Aim for the most efficient algorithm you can think of. Extremely slow implementations will not be accepted.
+ *
+ * The input is structured the same as for the assignment “Getting out of the maze”, except that edges now have a weight.
+ */
 public class GettingOutTheFastest {
     /**
      * @param n the number of nodes
