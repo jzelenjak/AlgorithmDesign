@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Objects;
 import java.util.Set;
 
 /**
@@ -54,6 +53,9 @@ public class TrainRouting {
         return false;
     }
 
+    /**
+     * A helper method to create an adjacency list graph out of edge list graph
+     */
     private static List<List<Edge>> createAdjacencyList(int n, Set<Edge> edges) {
         // Create an empty adjacency list ( O(n) )
         List<List<Edge>> list = new ArrayList<>();
@@ -66,24 +68,3 @@ public class TrainRouting {
     }
 }
 
-class Edge {
-    int from, to;
-
-    public Edge(int from, int to) {
-        this.from = from;
-        this.to = to;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Edge edge = (Edge) o;
-        return from == edge.from && to == edge.to;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(from, to);
-    }
-}
