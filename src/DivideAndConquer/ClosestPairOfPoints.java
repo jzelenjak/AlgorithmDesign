@@ -1,10 +1,18 @@
 package DivideAndConquer;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+/**
+ * In this exercise you will have to implement an algorithm to find the closest pair of points.
+ *
+ * One way to find the closest pair is by going over all possible pairs, which consists of n2 possibilities.
+ *
+ * To make this more efficient you will have to implement an algorithm that has as worst case run-time complexity O(nlogn).
+ *
+ * Pseudocode and explanation of this algorithm can be found in chapter 5.4 of your book.
+ */
 public class ClosestPairOfPoints {
     /**
      * Takes a list of points and returns the distance between the closest pair.
