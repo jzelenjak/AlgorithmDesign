@@ -1,4 +1,4 @@
-package DynamicProgramming;
+package DivideAndConquer;
 
 public class LongestPrefix {
     /**
