@@ -5,6 +5,13 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
+/**
+ * For this exercise you are given sequences a and b as well as their lengths n and m. You are also given
+ * a δ and may assume that αxiyj is alphaDiff when xi 6 = yj , or 0 otherwise. Finally you are given the
+ * memory filled using the equations above. Thus mem[i][j] contains exactly the value for OP T (i, j).
+ * You are tasked with returning the set of matched indices. Remember that a match is only made when
+ * the alpha value is chosen in the minimisation expression.
+ */
 public class RecoverYourItems {
     /**
      * You should implement this method.
